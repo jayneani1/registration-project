@@ -10,4 +10,7 @@ class Employee(models.Model):
     fullname = models.CharField(max_length=100)
     phone = models.CharField(max_length=15)
     position = models.ForeignKey(Position, on_delete=models.CASCADE)
+
+    # def __str__(self):
+    #    return self.employee
     
