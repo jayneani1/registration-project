@@ -6,8 +6,8 @@
     <title>Register</title>
 </head>
 <body>
-    (% block content %)
-    (% endblock content %)
+    {% block content %}
     {% csrf_token %}
+    {% endblock content %}
 </body>
 </html>
